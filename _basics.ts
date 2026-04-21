@@ -19,7 +19,7 @@ Why Use TypeScript?
 
 
 /* =============== Getting Started ====================
- After making sure TypeScript is installed (check: _installation.ts), you can create a new TypeScript file by saving it with a .ts extension.
+ After making sure TypeScript is installed (check: _installation.ts), you can create a new TypeScript file in src folder, by saving it with a .ts extension.
     
         // hello.ts
         console.log("Hello, World!");

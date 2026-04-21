@@ -17,6 +17,30 @@ NB: "src" and "dist" folders can be named anything, but these are common convent
         "outDir": "./dist",
         "rootDir": "./src",
 
+    Also create "include": ["src"] just outside the "compilerOptions" : {...},
+    ie: "compilerOptions": {
+        ...
+    },
+    "include": ["src"]
+
+    Also: "target": "esnext" by default, but can set to "target": "es2022", or others depending on your needs.
+    Also: "module": "esnext" by default, but can set to "module": "commonjs", or others depending on your needs.
+    Also: below "module": "esnext", set "moduleResolution": "bundler" by default, but can set to "node", or others depending on your needs.
+    Also: "strict": true (Search it there, it exists)
+    Also: "noUncheckedIndexedAccess": true, (Search it there, it exists)
+    Also: "exactOptionalPropertyTypes": true, (Search it there, it exists)
+    Also: "useUnknownInCatchVariables": false, 
+    Also: "skipLibCheck": true, (Search it there, it exists)
+            ie: 
+                "module": "es2022",
+                "target": "es2022",
+                "moduleResolution": "bundler",
+                "strict": true,
+                "noUncheckedIndexedAccess": true,
+                "exactOptionalPropertyTypes": true,
+                "useUnknownInCatchVariables": true,
+                "skipLibCheck": true
+
 - Create a simple TypeScript file in the "src" folder
 -To compile your TypeScript code, run the following command in your project directory:
 
