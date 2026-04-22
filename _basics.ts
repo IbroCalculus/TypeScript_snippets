@@ -23,15 +23,30 @@ Why Use TypeScript?
     
         // hello.ts
         console.log("Hello, World!");
+
+------------- Executing the code -------------
+This can be done in three (3) ways:
+NB: Method 1 is not recommended, it works only on .ts files whose content are javascript and not js. ie; do not use types.
+
+    1. Using node to execute the .ts:   cmd > node hello.ts ( from within src folder)
+    2. Using the TypeScript compiler (tsc) to compile the TypeScript code into JavaScript, and then running the resulting JavaScript code.
+    3. running using npm run dev which will create the outputs within dist folder
         
-Now, you can compile your TypeScript code into JavaScript using the TypeScript compiler (tsc). From the command line, navigate to the directory containing your TypeScript file and run:
+----------- Method 2: Using the TypeScript Compiler (tsc) --------------
+To compile your TypeScript code into JavaScript, you can use the TypeScript compiler (tsc). From the command line, navigate to the directory containing your TypeScript file (src) and run:   
 
         tsc hello.ts
         
-After running the tsc command, you should see a new file named hello.js in the same directory. This file contains the same JavaScript code as your TypeScript file, but with type annotations added.
+After running the tsc command, you should see a new file named hello.js in the same directory. This file contains the same JavaScript code as your TypeScript file, but without the type annotations added.
 
 Now, you can run your JavaScript code by opening hello.js in a web browser or by using Node.js:
-        node hello.js
+        node hello.js       ( within the .js file directory, ie dist)
+
+----------- Method 2: Using npm run dev --------------
+If you have set up your package.json with a build script as mentioned in _installation.ts, from the project root directory, you can simply run:
+        npm run dev
+
+This will watch for changes in your TypeScript files and automatically compile them into JavaScript files in the dist folder whenever you save your .ts files. You can then run the compiled JavaScript files from the dist folder using Node.js or by opening them in a web browser.
 
 
 */

@@ -41,6 +41,13 @@ NB: "src" and "dist" folders can be named anything, but these are common convent
                 "useUnknownInCatchVariables": true,
                 "skipLibCheck": true
 
+    Also: setting the below options to false, prevent generating other files as part of the .js output within /dist, such as .d.ts and .map files. Search for "declaration" and "sourceMap" in tsconfig.json to find these options.
+
+                // Other Outputs
+                "sourceMap": false,
+                "declaration": false,
+                "declarationMap": false,
+
 - Create a simple TypeScript file in the "src" folder
 -To compile your TypeScript code, run the following command in your project directory:
 

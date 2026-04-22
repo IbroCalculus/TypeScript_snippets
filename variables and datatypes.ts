@@ -4,6 +4,9 @@ let firstname: string = "Alice";
 // Similarly:
 let age = 25; 
 let isAdmin: boolean = true;
+let avalue: string | number = "Hello";                  // Union type: can be either string or number
+let ids: number[] = [1, 2, 3, 4];                       // Array of numbers
+let users: string[] = ["Alice", "Bob", "Charlie"];      // Array of strings
 
 age = 56;
 // age = "56";  // Error: Type '"56"' is not assignable to type 'number'.

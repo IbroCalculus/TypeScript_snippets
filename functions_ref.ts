@@ -3,6 +3,10 @@ function sayHello(): void {
     console.log("Hello to you");
 };
 
+function fails(): never {
+    throw new Error("This function always throws an error");
+}
+
 function greet(name: string): string {
     return `Hello, ${name}!`;
 }
