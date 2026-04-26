@@ -1,4 +1,5 @@
-// NB: similarly, use interface User {id: string; name: string; email?: string; createdAt: Date;} to define the same type
+// NB: similarly, use type User = {id: string; name: string; email?: string; createdAt: Date;} to define the same interface as below. Type aliases can be used to define object types, just like interfaces.
+
 // Interface is mostly used for objects, while type for single fields. But they can be used interchangeably for objects.
 
 // type User = {id: string; name: string; email?: string; createdAt: Date; sayHello(): void;}

@@ -1,7 +1,7 @@
 /*
 A type alias is essentially a name given to a type. It allows you to define a custom type that can be reused throughout your code. You define a type alias using the type keyword. Here's an example: 
 
-type MyType = string | number | boolean;
+type MyType = string | number | boolean;    ( A string, number, or boolean can be assigned to MyType )
 
 // Now you can use MyType in your code as follows:
 let value: MyType = "Hello";

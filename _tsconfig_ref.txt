@@ -21,7 +21,8 @@ NB: "src" and "dist" folders can be named anything, but these are common convent
     ie: "compilerOptions": {
         ...
     },
-    "include": ["src"]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
 
     Also: "target": "esnext" by default, but can set to "target": "es2022", or others depending on your needs.
     Also: "module": "esnext" by default, but can set to "module": "commonjs", or others depending on your needs.

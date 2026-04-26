@@ -14,7 +14,7 @@ age = 56;
 console.log(`Name: ${firstname}, Age: ${age}, Admin: ${isAdmin}`);
 
 
-// ========== Any type  ==========
+// ========== Any type (Not recommended)  ==========
 /*
 The any type tells TypeScript that a variable can hold any type of value (e.g., string, number, object, array, etc.). This means you can perform any operation on it without type-checking. It is useful when you don't know the type of the value that will be stored in a variable.
  */

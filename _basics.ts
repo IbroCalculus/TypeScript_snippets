@@ -26,13 +26,23 @@ Why Use TypeScript?
 
 ------------- Executing the code -------------
 This can be done in three (3) ways:
-NB: Method 1 is not recommended, it works only on .ts files whose content are javascript and not js. ie; do not use types.
+NB: Method 1 is not recommended, it works only on .ts files whose content are javascript compliant, and not .ts. ie; do not use types.
 
     1. Using node to execute the .ts:   cmd > node hello.ts ( from within src folder)
     2. Using the TypeScript compiler (tsc) to compile the TypeScript code into JavaScript, and then running the resulting JavaScript code.
     3. running using npm run dev which will create the outputs within dist folder
+
+---------- Method 1: Using Node to execute the .ts (Not recommended) ----------
+
+Node.js does not natively understand TypeScript, but it can execute JavaScript code. If your TypeScript file contains only JavaScript-compliant code (i.e., it does not use any TypeScript-specific features like type annotations), you can run it directly with Node.js. However, this is not recommended because it defeats the purpose of using TypeScript and can lead to runtime errors if you accidentally include TypeScript features.
+
+To run a TypeScript file directly with Node.js, you can use the following command in your terminal:
+        cmd > node hello.ts ( from within src folder)
+
+This will execute the code in hello.ts as if it were a JavaScript file. However, if your TypeScript file contains any type annotations or other TypeScript-specific syntax, you will get a syntax error when trying to run it with Node.js.
+
         
------------ Method 2: Using the TypeScript Compiler (tsc) --------------
+---------- Method 2: Using the TypeScript Compiler, tsc (Not recommended, compiles to older version of js using var instead of let) --------------
 To compile your TypeScript code into JavaScript, you can use the TypeScript compiler (tsc). From the command line, navigate to the directory containing your TypeScript file (src) and run:   
 
         tsc hello.ts
@@ -42,7 +52,9 @@ After running the tsc command, you should see a new file named hello.js in the s
 Now, you can run your JavaScript code by opening hello.js in a web browser or by using Node.js:
         node hello.js       ( within the .js file directory, ie dist)
 
------------ Method 2: Using npm run dev --------------
+----------- Method 2b: Using tsc (Do not include the file name. This is better than the above tsc hello.ts) --------------------
+
+----------- Method 3: Using npm run dev --------------
 If you have set up your package.json with a build script as mentioned in _installation.ts, from the project root directory, you can simply run:
         npm run dev
 
