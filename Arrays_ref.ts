@@ -8,7 +8,11 @@ let mixed2 = [1, "two", true]; // Inferred as (number | string | boolean)[]
 let mixedArray: (string | number)[] = ["Hello", 42, "World", 100];
 
 // --- Array of objects ---
-let employees: { name: string; age: number }[] = [
+interface Employee {
+    name: string;
+    age: number;
+}
+let employees: Employee[] = [
     { name: "Alice", age: 30 },
     { name: "Bob", age: 25 },
     { name: "Charlie", age: 35 }
