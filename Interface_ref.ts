@@ -9,7 +9,7 @@ interface User1 {
   sayHello(): void;
 };
 
-const user1: User1 = {
+const user11: User1 = {
   id: "1",
   name: "John Doe",
   email: "john@example.com",
@@ -20,9 +20,29 @@ const user1: User1 = {
 
 };
 
-user.name = "John Smith";
+user11.name = "John Smith";
 
-console.log(user);
+console.log(user11);
+
+
+// --------------------- Extending interfaces ---------------------
+interface User {
+  id: number;
+  name: string;
+}
+
+interface Admin extends User {
+  permissions: string[];
+}
+
+const admin: Admin = {
+  id: 1,
+  name: "Ibrahim",
+  permissions: [
+    "manage_users",
+    "manage_payments"
+  ]
+};
 
 // -------------------------------------------
 
@@ -31,7 +51,7 @@ interface Animal {
     move(distance: number): void;
   }
   
-  class Dog implements Animal {
+class Dog implements Animal {
     name: string;
   
     constructor(name: string) {
@@ -43,5 +63,5 @@ interface Animal {
     }
   }
   
-  const dog: Animal = new Dog("Rex");
-  dog.move(10); // Output: "Rex moved 10 meters."
+const dog: Animal = new Dog("Rex");
+dog.move(10); // Output: "Rex moved 10 meters."

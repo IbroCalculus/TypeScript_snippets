@@ -6,7 +6,7 @@ When you run the TypeScript compiler (tsc), it looks for a tsconfig.json file in
 
 ----------- Creating a tsconfig.json File -----------
 To create a tsconfig.json file, you can run the following command in your project directory:
-    > tsc --init
+    > npx tsc --init OR tsc --init
 
 
 ----------- Usage -----------
@@ -24,16 +24,16 @@ NB: "src" and "dist" folders can be named anything, but these are common convent
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
 
-    Also: "target": "esnext" by default, but can set to "target": "es2022", or others depending on your needs.
-    Also: "module": "esnext" by default, but can set to "module": "commonjs", or others depending on your needs.
-    Also: below "module": "esnext", set "moduleResolution": "bundler" by default, but can set to "node", or others depending on your needs.
-    Also: "strict": true (Search it there, it exists)
-    Also: "noUncheckedIndexedAccess": true, (Search it there, it exists)
-    Also: "exactOptionalPropertyTypes": true, (Search it there, it exists)
+    Also: "target": "es2022"
+    Also: "module": "nodenext" 
+    Also: below "module": "nodenext", set "moduleResolution": "bundler" by default, but can set to "node", or others depending on your needs.
+    Also: "strict": true                                        (Search it there, it exists)
+    Also: "noUncheckedIndexedAccess": true,                     (Search it there, it exists)
+    Also: "exactOptionalPropertyTypes": true,                   (Search it there, it exists)
     Also: "useUnknownInCatchVariables": false, 
     Also: "skipLibCheck": true, (Search it there, it exists)
             ie: 
-                "module": "es2022",
+                "module": "nodenext",
                 "target": "es2022",
                 "moduleResolution": "bundler",
                 "strict": true,

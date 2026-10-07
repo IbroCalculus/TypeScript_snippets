@@ -14,7 +14,7 @@ TypeScript can be installed in 2 ways:
     - > npm install typescript --save-dev   ( This installs TypeScript inside your project (node_modules) ).    
     - Verify installation: > npx tsc --version
 
-    - Initialize a TypeScript config file:  > npx tsc --init    ( This creates a _tsconfig.json file. CHECK: tsconfig_ref.ts to configure)
+    - Initialize a TypeScript config file:  > npx tsc --init    ( This creates a tsconfig.json file. CHECK: _tsconfig_ref.txt to configure)
 
     - Configure package.json to add a build script:
         "scripts": {

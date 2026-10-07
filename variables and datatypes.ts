@@ -7,6 +7,10 @@ let isAdmin: boolean = true;
 let avalue: string | number = "Hello";                  // Union type: can be either string or number
 let ids: number[] = [1, 2, 3, 4];                       // Array of numbers
 let users: string[] = ["Alice", "Bob", "Charlie"];      // Array of strings
+let value1: any = 42;                                   // Any type: can hold any value, but not recommended
+let value2: unknown = 42;                               // Unknown type: can hold any value, but must be checked before use. (More secure than any)
+let result: null = null;
+let valueUndefined: undefined = undefined;
 
 age = 56;
 // age = "56";  // Error: Type '"56"' is not assignable to type 'number'.

@@ -1,3 +1,8 @@
+//  Similarly, CHECK: literal types.ts
+
+
+// -------------------- Enum ------------------------------
+
 enum LoginError {
   EmailNotVerified = "EMAIL_NOT_VERIFIED",
   UserNotFount = "USER_NOT_FOUND",

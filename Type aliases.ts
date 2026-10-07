@@ -7,12 +7,12 @@ type MyType = string | number | boolean;    ( A string, number, or boolean can b
 let value: MyType = "Hello";
 value = 10;
 value = true;
-// value = "World";  // Error: Type '"World"' is not assignable to type 'MyType'. This ensures that only the allowed types are assigned to the variable.
+value = "World";  // Error: Type '"World"' is not assignable to type 'MyType'. This ensures that only the allowed types are assigned to the variable.
 */
 
 type ID = string | number;
-let userId: ID = "user123";
-userId = 456; // Valid because ID is a union of string and number
+let userId1: ID = "user123";
+userId1 = 456; // Valid because ID is a union of string and number
 
 // ======= Using Type Aliases with Objects ============
 type UserType = {
@@ -21,7 +21,7 @@ type UserType = {
   };
   
   const user1: UserType = { id: 1, username: "alice" };
-  console.log(user.username); // Output: "alice"
+  console.log(user1.username); // Output: "alice"
 
 //   ==========  Union Types with Type Aliases ============
 // Type aliases are especially useful for defining union types (types that can be one of several possibilities).

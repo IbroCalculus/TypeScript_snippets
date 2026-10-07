@@ -2,7 +2,10 @@
 // CHECK: tsconfig_ref.ts
 
 /*
-What is TypeScript?
+=================== What is TypeScript? ===================
+
+    TypeScript is a programming language built on top of JavaScript. It adds a type system that helps you catch certain programming mistakes before running your application.
+
     TypeScript is a superset of JavaScript, meaning it extends the capabilities of JavaScript by adding features such as static typing , which helps developers catch errors during development rather than at runtime. It was created and is maintained by Microsoft, and it compiles down to plain JavaScript, so it can run in any environment that supports JavaScript.
 
 In simpler terms:
@@ -10,7 +13,7 @@ In simpler terms:
     It allows you to write code with type annotations (e.g., specifying that a variable should be a string, number, or object).
     The TypeScript compiler (tsc) converts your TypeScript code into regular JavaScript, which can then be executed in browsers or Node.js.
     
-Why Use TypeScript?
+================== Why Use TypeScript? ===================
     Static Typing : With TypeScript, you can define types for variables, function parameters, and return values. This helps catch errors early in the development process.
     Improved Tooling : Since TypeScript provides type information, editors like Visual Studio Code can offer better autocompletion, refactoring, and error checking.
     Scalability : As projects grow larger, TypeScript's structure and type system help maintain code quality and make it easier to understand and modify.
